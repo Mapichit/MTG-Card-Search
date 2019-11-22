@@ -1,0 +1,30 @@
+<% include partials/header %>
+
+
+
+<div class="jumbotron text-center jumbotron-fluid" id="landing">
+
+    <% if(message && message.length > 0){ %>
+      <div class="container">
+      <div class="alert alert-danger alert-text" role="alert">
+        <%= message %>
+      </div>
+      </div>
+    
+      <% } %>
+
+    <h1 class="display-3">MTG card search</h1>
+    <p class="lead">A simple website that uses scryfall's api to search for Magic The Gathering cards</p>
+    <hr class="my-4">
+    <p>If you're not familar with the game, try input fantasy creature types such as Faerie or Dragon!</p>
+
+    <form action="/results" method="GET" >
+      <input type="text" placeholder="Enter Card Name" name="name">
+      <p>
+      <input type="submit" class="btn btn-primary btn-lg mt-3"> 
+      </p>
+    </form>
+
+  </div>
+
+<% include partials/footer %>

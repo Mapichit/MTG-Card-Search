@@ -1,0 +1,45 @@
+body{
+    
+}
+.jumbotron{
+    height: 100vh;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.5),
+                    rgba(0,0,0,0.5)),
+                      url("https://images.alphacoders.com/943/thumb-1920-943230.jpg"); 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: relative;
+
+ }
+
+ #landing h1{
+     padding-top: 20%;
+ }
+
+ .alert-text{
+    position: absolute;
+    width: 80%;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+
+ .header-search{
+     background-color: #77332b;
+     padding: 60px 0;
+     border-bottom: 1px solid black;
+     margin-bottom: 25px;
+     color: white;
+     text-align: center;
+     font-size: 25px;
+ }
+
+ .card-img-top{
+    webkit-box-shadow: 9px 10px 12px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 10px 12px -6px rgba(0,0,0,0.75);
+box-shadow: 9px 10px 12px -6px rgba(0,0,0,0.75);
+margin-bottom: 20px;
+ }

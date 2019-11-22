@@ -1,0 +1,35 @@
+<% include partials/header %>
+
+<section class="header-search">
+	<p><%= cards.data.length %> results where name includes <%= cardName %> </p>
+	<form action="/" method="GET" >
+	
+		<input type="submit" class="btn btn-primary btn-lg mt-3" value="Search for a new card"> 
+	
+	  </form>
+</section>
+
+<section class="gallery">
+<div class="container-fluid" style="width: 80%;">
+<div class ="row">
+
+<% for(var i = 0; i < cards.data.length; i++){ %>
+
+<% if(cards["data"][i]["image_uris"] != undefined){ %>
+ <% var image = cards["data"][i]["image_uris"]["normal"] %>
+	 <% var name = cards["data"][i]["name"] %>
+<% } %>
+
+
+<div class="col-sm-4 col-md-3 col-lg-2">	
+	<div class="card" style="border: none;">
+ 		<img src="<%=image%>" class="card-img-top">
+	</div>
+</div>	
+<% } %>
+	
+</div>
+</div>
+</section>
+
+<% include partials/footer %>
